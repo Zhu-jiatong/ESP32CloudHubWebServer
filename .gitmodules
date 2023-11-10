@@ -1,9 +1,0 @@
-[submodule "src/FilesystemAccessInterface"]
-	path = src/FilesystemAccessInterface
-	url = ../FilesystemAccessInterface
-[submodule "src/SessionManager"]
-	path = src/SessionManager
-	url = ../SessionManager
-[submodule "src/CredentialManager"]
-	path = src/CredentialManager
-	url = ../CredentialManager
