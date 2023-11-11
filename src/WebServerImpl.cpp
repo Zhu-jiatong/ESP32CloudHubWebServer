@@ -1,9 +1,9 @@
 #include "WebServerImpl.h"
-#include "FilesystemAccessInterface/src/FilesystemAccessInterface.h"
-#include "CredentialManager/src/CredentialManager.h"
 
 WebServer::WebServer(uint16_t port) : _server(port)
 {
+	_credentialManager.open("/sd/credential.db");
+
 	// authentication handlers
 	_server.on("/signin", HTTP_POST, signInResponse, nullptr, signInBody);
 	_server.on("/signup", HTTP_POST, signUpResponse, nullptr, signUpBody);

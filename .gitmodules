@@ -1,6 +1,0 @@
-[submodule "src/CredentialManager"]
-	path = src/CredentialManager
-	url = ../CredentialManager
-[submodule "src/SessionManager"]
-	path = src/SessionManager
-	url = ../SessionManager

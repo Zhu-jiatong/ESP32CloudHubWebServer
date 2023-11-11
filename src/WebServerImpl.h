@@ -2,6 +2,9 @@
 #define _WebServerImpl_h
 
 #include <ESPAsyncWebServer.h>
+#include <CredentialManager.h>
+#include <SessionManager.h>
+
 class WebServer
 {
 public:
@@ -36,6 +39,7 @@ public:
 
 private:
 	AsyncWebServer _server;
+	CredentialManager _credentialManager;
 
 	String getContentType(const String &filename) const;
 	String getSessionId(AsyncWebServerRequest *request) const;
